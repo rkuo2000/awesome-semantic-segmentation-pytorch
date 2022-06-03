@@ -24,7 +24,7 @@ parser.add_argument('--input-pic', type=str, default='../datasets/voc/VOC2012/JP
                     help='path to the input picture')
 parser.add_argument('--outdir', default='./eval', type=str,
                     help='path to save the predict result')
-parser.add_argument('--local_rank', type=int, default=0)
+#parser.add_argument('--local_rank', type=int, default=0)
 args = parser.parse_args()
 
 
