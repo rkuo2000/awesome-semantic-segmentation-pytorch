@@ -26,7 +26,8 @@ def short_hash(name):
 
 def get_resnet_file(name, root='~/.torch/models'):
     file_name = '{name}-{short_hash}'.format(name=name, short_hash=short_hash(name))
-    root = os.path.expanduser(root)
+    #root = os.path.expanduser(root)
+    root = "https://github.com/LikeLy-Journey/SegmenTron/releases/download/v0.1.0/"
 
     file_path = os.path.join(root, file_name + '.pth')
     sha1_hash = _model_sha1[name]
@@ -60,7 +61,8 @@ def get_resnet_file(name, root='~/.torch/models'):
 
 
 def get_model_file(name, root='~/.torch/models'):
-    root = os.path.expanduser(root)
+    #root = os.path.expanduser(root)
+    root = "https://github.com/LikeLy-Journey/SegmenTron/releases/download/v0.1.0/"
     file_path = os.path.join(root, name + '.pth')
     if os.path.exists(file_path):
         return file_path
