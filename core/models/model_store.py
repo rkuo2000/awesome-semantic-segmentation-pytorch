@@ -14,7 +14,7 @@ _model_sha1 = {name: checksum for checksum, name in [
     ('0d43d698c66aceaa2bc0309f55efdd7ff4b143af', 'resnet152'),
 ]}
 
-encoding_repo_url = 'https://hangzh.s3.amazonaws.com/'
+encoding_repo_url = 'https://s3.us-west-1.wasabisys.com/encoding'
 _url_format = '{repo_url}encoding/models/{file_name}.zip'
 
 
